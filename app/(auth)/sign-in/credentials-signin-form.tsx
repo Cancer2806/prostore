@@ -17,7 +17,7 @@ const CredentialsSignInForm = () => {
   });
 
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get('callbackUrl' || '/');
+  const callbackUrl = searchParams.get('callbackUrl') || '/';
 
   const SignInButton = () => {
     const { pending } = useFormStatus();
